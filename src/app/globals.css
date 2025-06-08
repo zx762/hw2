@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.pattern-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #b6d5d8;
+}
+
+.pattern-background::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    url('/0.start/leaves.png'),
+    url('/0.start/leaves.png');
+  background-size: 150px 150px;     /* 🖥️ 預設桌機圖片尺寸 */
+  background-repeat: repeat;
+  background-position: 0 0, 75px 75px;
+  background-origin: content-box;
+  background-clip: content-box;
+  opacity: 0.1;                    /* 🖥️ 預設桌機透明度 */
+  z-index: 0;
+}
+
+/* 📱 手機版：寬度小於等於 768px 時，調整透明度和圖片尺寸 */
+@media (max-width: 768px) {
+  .pattern-background::before {
+    opacity: 0.3;
+    background-size: 50px 50px;    /* ✅ 手機圖片尺寸 */
+  }
+}

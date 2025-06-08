@@ -65,10 +65,12 @@ export default function QuestionPage({questionIndex, nextStep}) {
   return (
     <>
       <MobileFrame questionIndex={questionIndex}>
-        <div className={`${colorMap[questionIndex].bg} w-[90vw] h-[95vh] md:w-1/3 md:h-[95vh] z-10 rounded-2xl p-2 overflow-hidden"`}>
+        <div
+          className={`${colorMap[questionIndex].bg} w-[90vw] h-[95vh] md:w-1/3 md:h-[95vh] z-10 rounded-2xl p-4 flex flex-col`}
+        >
 
 
-          <div className="w-full h-full bg-white rounded-2xl p-4 justify-center text-center flex flex-col items-center gap-[26px]">
+          <div className="w-full h-full bg-white rounded-2xl p-4 justify-center text-center flex flex-col items-center overflow-y-auto gap-[26px]">
 
             <div className="relative flex items-center justify-between w-full max-w-md mx-auto mt-6 mb-4 px-4">
               {/* 背景線條 */}

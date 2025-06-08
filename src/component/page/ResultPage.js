@@ -214,7 +214,7 @@ export default function ResultPage() {
                 ))
           }
 
-          <div className="flex flex-col items-center justify-center overflow-y-auto p-1">
+          <div className="w-full flex justify-start items-center flex-col p-[10px] overflow-y-auto overflow-x-hidden">
             {/* 主體圖片 */}
             <Image src={result.image} alt={result.title} width={160} height={160} className="mx-auto" />
 

@@ -159,7 +159,7 @@ export default function ResultPage() {
   return (
     <div className="pattern-background flex flex-col justify-center items-center min-h-screen">
       <div
-        className={`${result.bg} w-[90vw] h-[95vh] md:w-1/3 md:h-[95vh] z-10 rounded-2xl p-2 overflow-visible relative`}
+        className={`${result.bg} w-[90vw] h-[95vh] md:w-1/3 md:h-[95vh] z-10 rounded-2xl p-2 relative`}
       >
         <div className="w-full h-full bg-white rounded-2xl p-4 flex flex-col items-center justify-center relative text-center overflow-hidden">
 
@@ -214,38 +214,42 @@ export default function ResultPage() {
                 ))
           }
 
-          {/* 主體圖片 */}
-          <Image src={result.image} alt={result.title} width={160} height={160} className="mx-auto" />
+          <div className="flex flex-col items-center justify-center overflow-y-auto p-1">
+            {/* 主體圖片 */}
+            <Image src={result.image} alt={result.title} width={160} height={160} className="mx-auto" />
 
-          {/* 標題 */}
-          <h3 className={`text-2xl font-bold ${result.text} mt-3`}>{result.title}</h3>
+            {/* 標題 */}
+            <h3 className={`text-2xl font-bold ${result.text} mt-3`}>{result.title}</h3>
 
-          {/* hashtag */}
-          <div className="flex flex-wrap justify-center gap-2 mt-4">
-            {result.hashtag.map((tag, idx) => (
-              <span
-                key={idx}
-                className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-xl text-sm font-medium shadow-sm"
-              >
-                {tag}
-              </span>
-            ))}
+            {/* hashtag */}
+            <div className="flex flex-wrap justify-center gap-2 mt-4">
+              {result.hashtag.map((tag, idx) => (
+                <span
+                  key={idx}
+                  className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-xl text-sm font-medium shadow-sm"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            {/* 描述 */}
+            <div className="mt-4 text-[#444] text-center font-medium text-[14px] leading-loose tracking-wide whitespace-pre-line">
+              <p >{mainDesc.trim()}</p>
+              <p className={`text-lg mt-5 font-semibold ${result.text}`}>人生建議：</p>
+              <p className={`mt-1 `}>{advice.trim()}</p>
+            </div>
+
+            {/* 再玩一次按鈕 */}
+            <button
+              onClick={() => window.location.reload()}
+              className="bg-[#e99968] w-[138px] rounded-full text-white py-[16px] text-[18px] flex justify-center items-center font-semibold shadow-[0px_4px_0px_1px_#8D4509] cursor-pointer hover:translate-y-[2px] transition mt-6"
+            >
+              再玩一次
+            </button>
           </div>
 
-          {/* 描述 */}
-          <div className="mt-4 text-[#444] text-center font-medium text-[14px] leading-loose tracking-wide whitespace-pre-line">
-            <p >{mainDesc.trim()}</p>
-            <p className={`text-lg mt-5 font-semibold ${result.text}`}>人生建議：</p>
-            <p className={`mt-1 `}>{advice.trim()}</p>
-          </div>
 
-          {/* 再玩一次按鈕 */}
-          <button
-            onClick={() => window.location.reload()}
-            className="bg-[#e99968] w-[138px] rounded-full text-white py-[16px] text-[18px] flex justify-center items-center font-semibold shadow-[0px_4px_0px_1px_#8D4509] cursor-pointer hover:translate-y-[2px] transition mt-6"
-          >
-            再玩一次
-          </button>
         </div>
       </div>
     </div>

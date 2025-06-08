@@ -14,7 +14,7 @@ export default function StartPage({ nextStep }) {
     <div className="pattern-background flex flex-col justify-center items-center">
 
         <div className="bg-[#097b85] w-[90vw] h-[95vh] md:w-1/3 md:h-[95vh] z-10 rounded-2xl p-2 overflow-hidden">
-            <div className="w-full h-full bg-white rounded-2xl p-4 flex flex-col justify-center items-center text-center gap-10 ">
+            <div className="w-full h-full bg-white rounded-2xl p-4 flex flex-col justify-center items-center text-center gap-10">
                 <div className="text-[#fc6f2f] font-black text-[30px] leading-loose tracking-wide whitespace-pre-line">
                     你是哪一種療癒系小植物？
                 </div>

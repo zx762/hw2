@@ -40,7 +40,7 @@ export default function QuestionPage({ questionIndex, nextStep }) {
 
   return (
     <MobileFrame questionIndex={questionIndex}>
-      <div className={`${colorMap[questionIndex].bg} w-[90vw] h-[95vh] md:w-1/3 z-10 rounded-2xl p-4`}>
+      <div className={`${colorMap[questionIndex].bg} w-[90vw] h-[95vh] md:w-1/3 z-10 rounded-2xl p-2`}>
         <div className="w-full h-full bg-white rounded-2xl p-1 flex flex-col">
 
           {/* 🟡 時間軸（固定） */}

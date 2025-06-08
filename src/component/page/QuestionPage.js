@@ -41,7 +41,7 @@ export default function QuestionPage({ questionIndex, nextStep }) {
   return (
     <MobileFrame questionIndex={questionIndex}>
       <div className={`${colorMap[questionIndex].bg} w-[90vw] h-[95vh] md:w-1/3 z-10 rounded-2xl p-4`}>
-        <div className="w-full h-full bg-white rounded-2xl p-4 flex flex-col">
+        <div className="w-full h-full bg-white rounded-2xl p-1 flex flex-col">
 
           {/* 🟡 時間軸（固定） */}
           <div className="shrink-0">
@@ -77,8 +77,8 @@ export default function QuestionPage({ questionIndex, nextStep }) {
           </div>
 
           {/* 🔵 內容捲動區（Q標題、題目、選項） */}
-          <div className="flex-1 text-center gap-5 px-2 pb-4 w-full
-            flex justify-start items-center flex-col p-[10px] overflow-y-auto overflow-x-hidden">
+          <div className="flex-1 text-center gap-5 w-full
+            flex justify-start mt-5 items-center flex-col p-4 overflow-y-auto overflow-x-hidden">
 
             {/* Q 標題 */}
             <div className={` ${colorMap[questionIndex].text} border-2 ${colorMap[questionIndex].border} 

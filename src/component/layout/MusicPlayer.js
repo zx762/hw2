@@ -62,7 +62,7 @@ export default function MusicPlayer() {
         <Image
           src={isMuted ? muteImg : volumeImg}
           alt={isMuted ? "Muted" : "Volume"}
-          className="w-12 h-12 opacity-50 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer"
+          className="w-12 h-12 opacity-50 sm:group-hover:opacity-100 transition-opacity duration-300 sm:cursor-pointer"
           onClick={toggleMute}
         />
 

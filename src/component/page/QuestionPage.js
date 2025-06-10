@@ -78,7 +78,7 @@ export default function QuestionPage({ questionIndex, nextStep }) {
 
           {/* 🔵 內容捲動區（Q標題、題目、選項） */}
           <div className="flex-1 text-center gap-5 w-full
-            flex justify-start mt-5 items-center flex-col p-4 overflow-y-auto overflow-x-hidden">
+            flex justify-center sm:justify-start sm:mt-5 items-center flex-col p-4 overflow-y-auto overflow-x-hidden">
 
             {/* Q 標題 */}
             <div className={` ${colorMap[questionIndex].text} border-2 ${colorMap[questionIndex].border} 
@@ -87,7 +87,7 @@ export default function QuestionPage({ questionIndex, nextStep }) {
             </div>
 
             {/* 題目文字 */}
-            <div className={`text-center font-bold mb-7 text-3xl ${colorMap[questionIndex].text}`}>
+            <div className={`text-center font-bold mb-3 sm:mb-7 text-3xl ${colorMap[questionIndex].text}`}>
               {questionData.questions[questionIndex + 1].title}
             </div>
 

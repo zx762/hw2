@@ -46,7 +46,7 @@ export default function ResultPage() {
 
 人生建議：
 偶爾脆弱也不丟臉，
-試著練習讓別人靠近，會發現世界沒那麼危險。`,
+讓別人靠近會發現世界沒那麼危險。`,
       image: "/3.result/chlorophytum.png",
       cornerImg: [
         "/3.result/b-1.png",
@@ -81,7 +81,7 @@ export default function ResultPage() {
       text: "text-[#a75f37]",
       title: "你是「向日葵」",
       hashtag: ["#正能量滿滿", "#超會安慰人", "#派對開心果"],
-      description: `你是永遠不會塌陷的向日葵可頌，
+      description: `你是永遠不會塌陷的向日葵，
 像太陽一樣照亮別人～
 你總是用正面的態度面對生活，
 就算內心偶爾小崩潰，也能用微笑化解。

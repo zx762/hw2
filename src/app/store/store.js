@@ -17,11 +17,11 @@ const usePsyStore = create((set) => ({
 const useQuestionStore = create((set) => ({
   questions: {
     "1":{
-      title:"一個悠閒的下午，你想做些什麼？",
+      title:"一個悠閒的下午，你最想做些什麼？",
       options:[
         {title:"散步、看展充電一下", value:2},
-        {title:"跟朋友喝咖啡閒聊", value:3},
-        {title:"一個人待在家看書", value:1},
+        {title:"和朋友喝咖啡閒聊", value:3},
+        {title:"一個人在家看書", value:1},
         {title:"安排行程，出門玩個過癮", value:4}
       ]
     },
@@ -32,7 +32,7 @@ const useQuestionStore = create((set) => ({
         {title:"寫日記或做點手作", value:2},
         {title:"找信任的人傾訴", value:3},
         {title:"獨自消化情緒，不想說話", value:1},
-        {title:"馬上分散注意力，追劇刷短片", value:4}
+        {title:"追劇、看影片分散注意力", value:4}
       ]
     },
 
@@ -47,7 +47,7 @@ const useQuestionStore = create((set) => ({
     },
 
     "4":{
-        title:"你最喜歡的顏色是？",
+        title:"你更喜歡哪個顏色？",
         options:[
           {title:"神秘的深藍色", value:2},
           {title:"穩重的橄欖綠", value:3},
@@ -60,9 +60,9 @@ const useQuestionStore = create((set) => ({
         title:"如果你是一株植物，你希望？",
         options:[
           {title:"有漂亮花盆與人賞玩", value:2},
-          {title:"長在窗台，每天見到陽光 ", value:3},
+          {title:"長在窗台，每天都能見到陽光 ", value:3},
           {title:"放在書桌角落，靜靜陪伴", value:1},
-          {title:"成為人群焦點，被常常拍照打卡", value:4}
+          {title:"成為人群焦點，經常被拍照打卡", value:4}
         ]
     }
 
